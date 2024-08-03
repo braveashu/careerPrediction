@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+    <style>
+        input[type="radio"]{
+            padding-right: 1rem;
+            cursor: pointer;
+        }
+
+        .step-col{
+            width:120px;
+            text-align: center;
+            color:#333;
+            position:relative;
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        #progress{
+            position: absolute;
+            height: 100%;
+            width: 28.5%;
+            border-bottom-left-radius: 10%;
+            border-top-left-radius: 10%;
+            background: linear-gradient(to right,#1a6035,#036c2b);/*#ff105f,#ffad06*/
+        }
+        
+    </style>
+    <title>Test</title>
+</head>
+<body>
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center rounded">
+        <div class="pro h-auto w-full md:max-w-[50%] text-end rounded-lg border-black pb-4 mb-2 bg-blue-600">
+            <div class="step-row w-auto h-8 flex justify-between text-center box-shadow-[0 -1px 5px -1px #000] relative">
+                <div id="progress" class="p-6"></div>
+                <div class="step-col col-1"><small class="text-white">Step1</small></div>
+                <div class="step-col col-2"><small class="text-white">Step2</small></div>
+                <div class="step-col col-3"><small class="text-white">Step3</small></div>
+                <div class="step-col col-4"><small class="text-white">Step4</small></div>
+                <div class="step-col col-5"><small class="text-white">Step5</small></div>
+                <div class="step-col col-6"><small class="text-white">Step6</small></div>
+                <div class="step-col col-6"><small class="text-white">Step7</small></div>
+            </div>
+        </div>
+    </div>
+    <div class="maincontainer">
+     <div class="">
+        <h2 class="text-4xl text-center mt-4">Work Scenario</h2>
+        <p class="text-xl text-center mt-4">If given an option, would you choose given work to make a living </p>
+        <!-- question1 -->
+       <form id="quiz-form"> 
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Write articles on daily news or stories for magazines.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q1" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q1" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q1" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div> 
+
+        </div>
+    </div>
+    <!-- question2 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Serve in the Armed forces.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q2" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q2" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q2" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div> 
+
+        </div>
+    </div>
+    <!-- question3 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Administer the business of a company.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q3" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q3" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q3" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div>  
+        </div>
+    </div>
+    <!-- question4 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Work as a clerk in a government dept.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q4" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q4" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q4" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div>  
+        </div>
+    </div>
+    <!-- question5 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Give reviews and reports on latest happening.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q5" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q5" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q5" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div> 
+
+        </div>
+    </div>
+    <!-- question6 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>To act on stage.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q6" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q6" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div> 
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q6" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div> 
+
+        </div>
+    </div>
+    <!-- question7 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Make apparels for special occasions.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q7" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q7" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q7" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div>  
+
+        </div>
+    </div>
+    <!-- question8 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Be a part of sport team.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q8" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q8" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q8" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div>  
+
+        </div>
+    </div>
+    <!-- question9 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Repair faults with microwave, fridge or other electronics and electrical items .</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q9" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q9" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q9" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div>  
+
+        </div>
+    </div>
+    <!-- question10 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Stand by needy and poor to survive.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q10" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q10" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q10" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div> 
+        </div>
+    </div>
+    <!-- question11 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Investigate a fraud or scene of crime.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q11" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q11" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q11" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div> 
+        </div>
+    </div>
+    <!-- question12 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Convince people to vote for or support a charity campaign.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q12" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q12" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q12" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div> 
+        </div>
+    </div>
+    <!-- question13 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>To work on computers and write programs and logical codes.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q13" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q13" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q13" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div> 
+        </div>
+    </div>
+    <!-- question14 -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+            <div class="question mb-4 font-medium text-2xl" id="questions">
+                <p>Give Education to children.</p>
+            </div>
+            <div class="option1 block mb-2">
+                <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q14" value="yes"><label class="text-xl font-medium" for="optionA">yes</label>
+            </div>
+            <div class="option2 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q14" value="maybe"><label class="text-xl font-medium" for="optionB">maybe</label>
+            </div>
+            <div class="option3 block mb-2">
+                <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q14" value="no"><label class="text-xl font-medium" for="optionC">no</label>
+            </div> 
+        </div>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+        <!-- next button -->
+        
+     </div>
+    </div>
+    
+ <div id="quiz-results"></div>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+  const quizForm = document.getElementById("quiz-form");
+  const quizResults = document.getElementById("quiz-results");
+
+  quizForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(quizForm);
+    const answers = {};
+
+    for (const [name, value] of formData) {
+      answers[name] = value;
+    }
+
+    const correctAnswers2 = {
+      Q1: "True",
+      Q2: "True",
+      Q3: "True",
+      Q4: "True",
+      Q5: "True",
+      Q6: "True",
+      Q7: "True",
+      Q8: "True",
+      Q9:"True",
+      Q10:"True"
+     };
+
+
+    // let score = 0;
+    // for (const question in correctAnswers2) {
+    //   if (answers[question] === correctAnswers2[question]) {
+    //     score++;
+    //   }
+    // }
+    // if (score >= 0 && score <= 4) {
+    //   score = 0;
+    // } else if (score >= 5 && score <= 7) {
+    //   score = 1;
+    // } else {
+    //   score = 2;
+    // }
+    let score2=0;
+    let yesCount=0;
+    let maybeCount=0;
+    let noCount=0;
+    for (const question in correctAnswers2){
+        if(answers[question]=="yes"){
+            yesCount++;
+        } else if(answers[question]=="maybe"){
+            maybeCount++;
+        }
+        else if(answers[question]=="no"){
+            nocount++;
+        }
+    }
+    if (yesCount> maybeCount && yesCount>noCount){
+        score2=score2+2;
+    }
+    else if(noCount>yesCount &&yesCount>maybeCount){
+        score2+=0;
+    }
+    else{
+        score2+=1
+    }
+
+
+    const dataToSend = {
+      
+      score2: score2,
+    };
+    const jsonData = JSON.stringify(dataToSend);
+    sendData(jsonData);
+  });
+});
+
+const sendData = (data) => {
+  console.log(data);
+  fetch("http://localhost:30008/submit-work-quiz", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: data,
+  })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      console.log("Success:", data);
+      window.location.replace(`/work.html`);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+};
+
+ </script>
+</body>
+</html>

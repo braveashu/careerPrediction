@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type="radio"]{
+            padding-right: 1rem;
+            cursor: pointer;
+        }
+        .step-col{
+            width:120px;
+            text-align: center;
+            color:#333;
+            position:relative;
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        #progress{
+            position: absolute;
+            height: 100%;
+            width: 86%;
+            border-bottom-left-radius: 10%;
+            border-top-left-radius: 10%;
+            background: linear-gradient(to right,#1a6035,#036c2b);
+        }
+    </style>
+    <title>Test</title>
+</head>
+<body>
+    <!-- progress bar start -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center rounded ">
+        <div class="pro h-auto w-full md:max-w-[50%] text-end rounded-lg border-black pb-4 mb-2 bg-blue-600">
+            <div class="step-row w-auto h-8 flex justify-between text-center  box-shadow-[0 -1px 5px -1px #000] relative">
+                <div id="progress" class="p-6"></div>
+                <div class="step-col col-1"><small class="text-white">Step1</small></div>
+                <div class="step-col col-2"><small class="text-white">Step2</small></div>
+                <div class="step-col col-3"><small class="text-white">Step3</small></div>
+                <div class="step-col col-4"><small class="text-white">Step4</small></div>
+                <div class="step-col col-5"><small class="text-white">Step5</small></div>
+                <div class="step-col col-6"><small class="text-white">Step6</small></div>
+                <div class="step-col col-6"><small class="text-white">Step7</small></div>
+            </div>
+        </div>
+    </div>
+    <!-- progress bar end -->
+   <!-- Main Part-->
+   <div class="maincontainer">
+    <div class="">
+       <h2 class="text-4xl text-center mt-4">General Science Test</h2>
+       <!-- -----------------GK part start------------ -->
+       <div id="#gk">
+        <!-- question1 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>The Battle of Plassey was fought in</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q1" value="1757"><label class="text-xl font-medium" for="optionA">1757</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q1" value="1782"><label class="text-xl font-medium" for="optionB">1782</label>
+                </div>
+                <div class="option3 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q1" value="1748"><label class="text-xl font-medium" for="optionC">1748</label>
+                </div> 
+                <div class="option4 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q1" value="1764"><label class="text-xl font-medium" for="optionC">1764</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question2 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>The territory of Porus who offered strong resistance to Alexander was situated between the rivers of</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q2" value="Sutlej and Beas"><label class="text-xl font-medium" for="optionA">Sutlej and Beas</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q2" value="Jhelum and Chenab"><label class="text-xl font-medium" for="optionB">Jhelum and Chenab</label>
+                </div>
+                <div class="option3 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q2" value="Ravi and Chenab"><label class="text-xl font-medium" for="optionC">Ravi and Chenab</label>
+                </div> 
+                <div class="option4 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q2" value="Ganga and Yamuna"><label class="text-xl font-medium" for="optionC">Ganga and Yamuna</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question3 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>Who was known as Iron man of India?</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q3" value="Govind Ballabh Pant"><label class="text-xl font-medium" for="optionA">Govind Ballabh Pant</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q3" value="Jawaharlal Nehru"><label class="text-xl font-medium" for="optionB">Jawaharlal Nehru</label>
+                </div>
+                <div class="option3 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q3" value="Subhash Chandra Bose"><label class="text-xl font-medium" for="optionC">Subhash Chandra Bose</label>
+                </div> 
+                <div class="option4 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q3" value="Sardar Vallabhbhai Patel"><label class="text-xl font-medium" for="optionC">Sardar Vallabhbhai Patel</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question4 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>The Indian to beat the computers in mathematical wizardry is
+                        Ramanujam
+                        </p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q4" value="Ramanujam"><label class="text-xl font-medium" for="optionA">Ramanujam</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q4" value="Rina Panigrahi"><label class="text-xl font-medium" for="optionB">Rina Panigrahi</label>
+                </div>
+                <div class="option3 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q4" value="Raja Ramanna"><label class="text-xl font-medium" for="optionC">Raja Ramanna</label>
+                </div> 
+                <div class="option4 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q4" value="Shakunthala Devi"><label class="text-xl font-medium" for="optionC">Shakunthala Devi</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question5 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>For which of the following disciplines is Nobel Prize awarded?</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q5" value="Physics and Chemistry"><label class="text-xl font-medium" for="optionA">Physics and Chemistry</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q5" value="Physiology or Medicine"><label class="text-xl font-medium" for="optionB">Physiology or Medicine</label>
+                </div>
+                <div class="option3 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q5" value="Literature, Peace and Economics"><label class="text-xl font-medium" for="optionC">Literature, Peace and Economics</label>
+                </div> 
+                <div class="option4 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q5" value="All of the above"><label class="text-xl font-medium" for="optionC">All of the above</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question6 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>The great Victoria Desert is located in</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q6" value="Canada"><label class="text-xl font-medium" for="optionA">Canada</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q6" value="West Africa"><label class="text-xl font-medium" for="optionB">West Africa</label>
+                </div>
+                <div class="option3 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q6" value="Australia"><label class="text-xl font-medium" for="optionC">Australia</label>
+                </div> 
+                <div class="option4 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q6" value="North America"><label class="text-xl font-medium" for="optionC">North America</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question7 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>The ratio of width of our National flag to its length is</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q7" value="3:5"><label class="text-xl font-medium" for="optionA">3:5</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q7" value="2:3"><label class="text-xl font-medium" for="optionB">2:3</label>
+                </div>
+                <div class="option3 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q7" value="2:4"><label class="text-xl font-medium" for="optionC">2:4</label>
+                </div> 
+                <div class="option4 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q7" value="3:4"><label class="text-xl font-medium" for="optionC">3:4</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question8 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>The book of Parsis is</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q8" value="Torah"><label class="text-xl font-medium" for="optionA">Torah</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q8" value="Bible"><label class="text-xl font-medium" for="optionB">Bible</label>
+                </div>
+                <div class="option3 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q8" value="Zend Avesta"><label class="text-xl font-medium" for="optionC">Zend Avesta</label>
+                </div> 
+                <div class="option4 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q8" value="Gita"><label class="text-xl font-medium" for="optionC">Gita</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question9 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>'Madhubani', a style of folk paintings, is popular in which of the following states in India?</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q9" value="Uttar Pradesh"><label class="text-xl font-medium" for="optionA">Uttar Pradesh</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q9" value="Rajasthan"><label class="text-xl font-medium" for="optionB">Rajasthan</label>
+                </div>
+                <div class="option3 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q9" value="Madhya Pradesh"><label class="text-xl font-medium" for="optionC">Madhya Pradesh</label>
+                </div> 
+                <div class="option4 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q9" value="Bihar"><label class="text-xl font-medium" for="optionC">Bihar</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question10 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>The last Mahakumbh of the 20th century was held at</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q10" value="Nasik"><label class="text-xl font-medium" for="optionA">Nasik</label>
+                </div>
+                <div class="option2 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q10" value="Ujjain"><label class="text-xl font-medium" for="optionB">Ujjain</label>
+                </div>
+                <div class="option3 block mb-2">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q10" value="Allahabad"><label class="text-xl font-medium" for="optionC">Allahabad</label>
+                </div> 
+                <div class="option4 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q10" value="Haridwar"><label class="text-xl font-medium" for="optionC">Haridwar</label>
+                </div> 
+            </div>
+        </div>
+
+    </div>
+    <!-- -----------------GK part end------------ -->
+    <!-- -----------------Comprehension part start------------ -->
+        <div id="#comprehension">
+            <!-- comprehension -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                            <p>Direction (1-5): Most people who bother with the matter at all would admit that the English language is in a bad way, but it is generally assumed that we cannot by conscious action do anything about it. Our civilization is decadent and our language-so the argument runs-must inevitably share in the general collapse. It follows that any struggle against the abuse of language is a sentimental archaism, like preferring candles to electric light or hansom cabs to aeroplanes. Underneath this lies the half-conscious belief that language is natural growth and not an instrument which we shape for our own purposes. 
+                                Now it is clear that the decline of a language must ultimately have political and economic causes it is not due simply to the bad influence of this or that individual writer. But an effect can become a cause, reinforcing the original cause and producing the same effect in an intensified form, and so on indefinitely. A man may take to drink because he feels himself to be a failure, and then fail all the more completely because he drinks. It is rather the same thing that is happening to the English language. It becomes ugly and inaccurate because our thoughts are foolish, but the slovenliness of our language makes it easier for us to have foolish thoughts. The point is that the process is reversible. Modern English, especially written English, is full of bad habits which spread by imitation and which can be avoided if one is willing to take the necessary trouble. If one gets rid of these habits, one can think more clearly, and to think clearly is a necessary first step towards political regeneration: so that the fight against bad English is not frivolous and is not the exclusive concern of professional writers. 
+                                </p>
+                    </div>
+                </div>
+            </div>
+            <!-- question1 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>Q.1 Many people believe that nothing can be done about the English language because – </p>
+                             <p>(A) Bad habits spread by imitation</p>
+                             <p>(B) We live in a decadent civilization</p>
+                            <p>(C) There are too may bad writers</p>
+                            <p>(D) People are too lazy to change their bad habits
+                            </p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q1" value="A"><label class="text-xl font-medium" for="optionA">A</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q1" value="B"><label class="text-xl font-medium" for="optionB">B</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q1" value="C"><label class="text-xl font-medium" for="optionC">C</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q1" value="D"><label class="text-xl font-medium" for="optionC">D</label>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- question2 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>Q.2 The author believes that – </p>
+                            <p>(A) It’s now too late to do anything about the problem</p>
+                            <p>(B) Language is a natural growth and cannot be shaped for our won purpose</p>
+                            <p>(C) The decline in the language can be stopped</p>
+                            <p>(D) The process of an increasingly bad language cannot be stopped</p>
+                    
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q2" value="A"><label class="text-xl font-medium" for="optionA">A</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q2" value="B"><label class="text-xl font-medium" for="optionB">B</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q2" value="C"><label class="text-xl font-medium" for="optionC">C</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q2" value="D"><label class="text-xl font-medium" for="optionC">D</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question3 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>Q.3 The author believes that the first stage towards the political regeneration of the language would be – </p>
+                            <p>(A) Taking the necessary trouble to avoid bad habits</p>
+                            <p>(B) Avoiding being frivolous about it</p>
+                            <p>(C) Clear thinking</p>
+                            <p>(D) For professional writers to help</p>
+                        
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q3" value="A"><label class="text-xl font-medium" for="optionA">A</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q3" value="B"><label class="text-xl font-medium" for="optionB">B</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q3" value="C"><label class="text-xl font-medium" for="optionC">C</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q3" value="D"><label class="text-xl font-medium" for="optionC">D</label>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- question4 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>Q.4 The author believes that – </p>
+                            <p>(A) English is become ugly</p>
+                            <p>(B) Bad language</p>
+                            <p>(C) Our thoughts are becoming uglier because we ae making the language uglier </p>
+                            <p>(D) Our civilization is decadent so nothing can be done to stop the decile of the language                            
+                        </p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q4" value="A"><label class="text-xl font-medium" for="optionA">A</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q4" value="B"><label class="text-xl font-medium" for="optionB">B</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q4" value="C"><label class="text-xl font-medium" for="optionC">C</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q4" value="D"><label class="text-xl font-medium" for="optionC">D</label>
+                    </div> 
+                </div>
+            </div>
+            <!-- question5 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+                <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>Q.5  What causes bad language in the end?</p>
+                            <p>(A) The bad influence of individual writers</p>
+                            <p>(B) The imitation of bad language habits</p>
+                            <p>(C) Political and economic causes.</p>
+                            <p>(D) An assumption that nothing can be done about</p>
+                        
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q5" value="A"><label class="text-xl font-medium" for="optionA">A</label>
+                    </div>
+                    <div class="option2 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q5" value="B"><label class="text-xl font-medium" for="optionB">B</label>
+                    </div>
+                    <div class="option3 block mb-2">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q5" value="C"><label class="text-xl font-medium" for="optionC">C</label>
+                    </div> 
+                    <div class="option4 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionC" name="Q5" value="D"><label class="text-xl font-medium" for="optionC">D</label>
+                    </div> 
+                </div>
+            </div>
+           
+    </div>
+    <!-- -----------------Comprehension part end------------ -->
+
+
+   <!-- Next button -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+        <div class="maincomponent  h-auto w-full md:max-w-[50%] text-end rounded-lg border-black p-3  md:p-5 mb-2">
+             <button class="bg-blue-900 w-auto h-10 rounded hover:bg-green-500"><a class="text-xl text-white p-8 py-10 font-medium text-center" href="final.html">Next</a></button>
+        </div>
+    </div> 
+
+</div>
+</div>
+</body>
+</html>

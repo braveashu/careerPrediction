@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h2 style="text-align: center;">Here are Your Top-3 Career Options </h2><br/>
+    <div class="top3">
+      <h1>1.profession or stream daal dena yaha</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quod vel ut, repellat nam magni.</p>
+      <div class="jobs">
+        <ul>
+          <li>job1</li>
+          <li>job2</li>
+          <li>job3</li>
+        </ul>
+      </div>
+    </div>
+    <div class="top3">
+      <h1>1.profession or stream daal dena yaha</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quod vel ut, repellat nam magni.</p>
+      <div class="jobs">
+        <ul>
+          <li>job1</li>
+          <li>job2</li>
+          <li>job3</li>
+        </ul>
+      </div>
+    </div>
+    <div class="top3">
+      <h1>1.profession or stream daal dena yaha</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quod vel ut, repellat nam magni.</p>
+      <div class="jobs">
+        <ul>
+          <li>job1</li>
+          <li>job2</li>
+          <li>job3</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <section class="skill">
+    <div class="skills">
+
+    <h3 class="h3 skills-title">My skills</h3>
+
+    <ul class="skills-list content-card">
+
+      <li class="skills-item">
+
+        <div class="title-wrapper">
+          <h5 class="h5">Banking and Finances-</h5>
+          <data class="val" id="t1"></data>
+        </div>
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 0%;" id="banking"></div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+
+        <div class="title-wrapper">
+          <h5 class="h5">Sports and Arts-</h5>
+          <data class="val" id="t2"></data>
+        </div>
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 0%;" id="sportsandarts"></div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+
+        <div class="title-wrapper">
+          <h5 class="h5">IT sector-</h5>
+          <data class="val" id="t3"></data>
+        </div>
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 0%;" id="it_sector"></div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+
+        <div class="title-wrapper">
+          <h5 class="h5">Beauty & Wellness-</h5>
+          <data class="val" id="t4"></data>
+        </div>
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 0%;" id="beauty_wellness"></div>
+        </div>
+
+      </li>
+
+      <li class="skills-item">
+
+        <div class="title-wrapper">
+          <h5 class="h5">Public Administration-</h5>
+          <data class="val" id="t5"></data>
+        </div>
+
+        <div class="skill-progress-bg">
+          <div class="skill-progress-fill" style="width: 0%;" id="pubadmin"></div>
+        </div>
+
+      </li>
+
+    </ul>
+  </div>
+  <button onclick="updateProgressBars()">Update Progress</button>
+  </section>
+
+  <div class="conclusion">
+    <h1>Conclusion</h1>
+    <p>Based on the series of tests you have completed, our AI and Machine Learning system has identified your top 3 career options:</p>
+    <ol>
+        <li>Career Option 1: AI Developer</li>
+        <li>Career Option 2: Data Scientist</li>
+        <li>Career Option 3: Machine Learning Engineer</li>
+    </ol>
+    <p>These options are tailored to your skills and interests. We encourage you to explore these career paths further and seek additional guidance if needed.</p>
+    <div class="conclusion">
+        <p>Your future looks bright in the world of AI and ML!</p>
+    </div>
+</div>
+<script>
+  // Function to update all progress bars
+  function updateProgressBars() {
+      // Define progress data for each progress bar (change as needed)
+      const output_data = {
+    banking: 75,
+    sportsandarts: 50,
+    it_sector: 25,
+    beauty_wellness: 75,
+    pubadmin: 50,
+    // Add more categories and percentages as needed
+};
+
+// Convert the result data into the progressData format
+const progressData = Object.keys(output_data).map((category) => ({
+    id: category,
+    value: output_data[category],
+}));
+
+    // Update each progress bar and data value
+    progressData.forEach(function(progress, index) {
+          var progressBar = document.getElementById(progress.id);
+          var dataValue = document.getElementById("t" + (index + 1));
+          
+          if (progressBar && dataValue) {
+              progressBar.style.width = progress.value + "%";
+              dataValue.textContent = progress.value + "%";
+          }
+      });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        input[type="radio"]{
+            padding-right: 1rem;
+            cursor: pointer;
+        }
+        .step-col{
+            width:120px;
+            text-align: center;
+            color:#333;
+            position:relative;
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        #progress{
+            position: absolute;
+            height: 100%;
+            border-bottom-left-radius: 10%;
+            border-top-left-radius: 10%;
+            width: 14%;
+            background: linear-gradient(to right,#1a6035,#036c2b);
+        }
+    </style>
+    <title>Personality</title>
+</head>
+<body>
+    <!-- progress bar start -->
+    <div class="conatiner m-4 md:m-10 flex flex-row justify-center rounded ">
+        <div class="pro h-auto w-full md:max-w-[50%] text-end rounded-lg border-black pb-4 mb-2 bg-blue-600 ">
+            <div class="step-row w-auto h-8 flex justify-between text-center box-shadow-[0 -1px 5px -1px #000] relative">
+                <div id="progress" class="p-6"></div>
+                <div class="step-col col-1 items-center"><small class="text-white">Step1</small></div>
+                <div class="step-col col-2"><small class="text-white">Step2</small></div>
+                <div class="step-col col-3"><small class="text-white">Step3</small></div>
+                <div class="step-col col-4"><small class="text-white">Step4</small></div>
+                <div class="step-col col-5"><small class="text-white">Step5</small></div>
+                <div class="step-col col-6"><small class="text-white">Step6</small></div>
+                <div class="step-col col-6"><small class="text-white">Step7</small></div>
+            </div>
+        </div>
+    </div>
+    <!-- progress bar end -->
+    <div class="maincontainer">
+     <div class="">
+        <h2 class="text-4xl text-center mt-4">Personality Test</h2>
+        <!-- question1 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>You like going out and spending time with friends than staying at home.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q1" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q1" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question2 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>I cheer people up.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q2"  value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q2" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question3 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>I like to get involved in others people problem.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q3" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q3" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question4 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>I take time for others.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q4" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q4" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question5 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>You enjoy receiving positive feedback and approval from others.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q5" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q5" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question6 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>You can easily criticize others</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q6" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q6" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question7 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>Your friends call you talkative and happy go lucky.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q7" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q7" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question8 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>I consider myself as an intelligent person.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA"   name="Q8" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q8" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question9 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>You like speaking to more and more people.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q9" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q9" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question10 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>I don’t feel comfortable with myself when I am alone.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q10" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q10" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+      <!-- question11 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+                <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>I am the life of party.</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q11" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                    </div>
+                    <div class="option2 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q11" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                    </div> 
+                </div>
+        </div>
+        
+            <!-- question12 -->
+            <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+                <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                    <div class="question mb-4 font-medium text-2xl" id="questions">
+                        <p>You get annoyed if someone cuts in front of you in a line in ticket counter.</p>
+                    </div>
+                    <div class="option1 block mb-2">
+                        <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q12" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                    </div>
+                    <div class="option2 block">
+                        <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q12" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                    </div> 
+                </div>
+            </div>
+        <!-- question13 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>If someone tries to break a queue a queue you will likely tell them to move back to the line.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q13" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q13" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question14 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>I don’t like spending my time alone and do nothing.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q14" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q14" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        
+        <!-- question15 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>You never plan your day.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q15" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q15" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question16 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>You enjoy gathering friends, organizing a get together.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q16" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q16" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        <!-- question17 -->
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>I know how to comfort others.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q17" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q17" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+         <!-- question18 -->
+         <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>I believe that people are essentially evil .</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q18" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q18" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+         <!-- question19 -->
+         <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>I don’t like to get lost in thought.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q18" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q18" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+         <!-- question20 -->
+         <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>You are an emotional person.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q20" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q20" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+         <!-- question21 -->
+         <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>You don’t find difficult to talk about your feelings.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q21" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q21" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+         <!-- question22 -->
+         <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>You like a calm space more than aloud and lively gathering.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q22" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q22" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+         <!-- question23 -->
+         <div class="conatiner m-4 md:m-10 flex flex-row justify-center ">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] border-2 rounded-lg border-black p-3  md:p-5 mb-2">
+                <div class="question mb-4 font-medium text-2xl" id="questions">
+                    <p>You dislike to spend time in college laboratory.</p>
+                </div>
+                <div class="option1 block mb-2">
+                    <input class="w-5 h-5 mr-2" type="radio" id="optionA" name="Q23" value="True"><label class="text-xl font-medium" for="optionA">True</label>
+                </div>
+                <div class="option2 block">
+                    <input  class="w-5 h-5 mr-2" type="radio" id="optionB" name="Q23" value="False"><label class="text-xl font-medium" for="optionB">False</label>
+                </div> 
+            </div>
+        </div>
+        
+
+        
+        <div class="conatiner m-4 md:m-10 flex flex-row justify-center">
+            <div class="maincomponent  h-auto w-full md:max-w-[50%] text-end rounded-lg border-black p-3  md:p-5 mb-2">
+             <button class="bg-blue-900 w-auto h-10 rounded hover:bg-green-500"><a class="text-xl text-white p-8 py-10 font-medium text-center" href="work.html">Next</a></button>
+            </div>
+        </div>   
+    </div> 
+ </div>
+</body>
+</html>
